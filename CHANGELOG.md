@@ -15,5 +15,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial release.
 
-[unreleased]: https://github.com/solvebeam/solvebeam-wordpress-plugin-boilerplate/compare/v1.0.0...HEAD
-[1.0.0]: https://github.com/solvebeam/solvebeam-wordpress-plugin-boilerplate/releases/tag/v1.0.0
+[unreleased]: https://github.com/solvebeam/solvebeam-mermaid-for-wordpress/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/solvebeam/solvebeam-mermaid-for-wordpress/releases/tag/v1.0.0

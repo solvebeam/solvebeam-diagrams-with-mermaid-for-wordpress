@@ -1,4 +1,4 @@
-=== SolveBeam Boilerplate ===
+=== SolveBeam Mermaid ===
 Contributors: solvebeam
 Tags: solvebeam
 Requires at least: 6.7
@@ -8,7 +8,7 @@ Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-A modern WordPress plugin boilerplate by SolveBeam, providing a structured foundation for building scalable and maintainable plugins.
+A modern WordPress plugin for creating Mermaid diagrams by SolveBeam, providing a structured foundation for building scalable and maintainable plugins.
 
 == Description ==
 

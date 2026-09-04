@@ -5,12 +5,12 @@
  * @author    SolveBeam
  * @copyright 2026 SolveBeam
  * @license   GPL-2.0-or-later
- * @package   SolveBeam\WordPressPluginBoilerplate
+ * @package   SolveBeam\WordPressMermaid
  */
 
 declare(strict_types=1);
 
-namespace SolveBeam\WordPressPluginBoilerplate;
+namespace SolveBeam\WordPressMermaid;
 
 /**
  * Plugin class
@@ -70,7 +70,7 @@ final class Plugin {
 		$settings_link = \sprintf(
 			'<a href="%s">%s</a>',
 			\esc_url( '#' ),
-			\esc_html__( 'Settings', 'solvebeam-boilerplate' )
+			\esc_html__( 'Settings', 'solvebeam-mermaid' )
 		);
 
 		\array_unshift( $links, $settings_link );

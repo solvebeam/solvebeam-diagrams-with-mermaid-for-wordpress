@@ -1,6 +1,8 @@
-# SolveBeam WordPress Plugin Boilerplate
+# SolveBeam Mermaid
 
-A modern WordPress plugin boilerplate by SolveBeam, providing a structured foundation for building scalable and maintainable plugins.
+A modern WordPress plugin for creating Mermaid diagrams by SolveBeam, providing a structured foundation for building scalable and maintainable plugins.
+
+The block is inspired by [MerPress](https://wordpress.org/plugins/merpress/).
 
 ## Requirements
 
@@ -29,8 +31,8 @@ The `.wp-env.json` maps the plugin twice into the WordPress environment:
 
 | Mount path | Source | Purpose |
 |---|---|---|
-| `wp-content/plugins/solvebeam-boilerplate-dev` | `./` | Live development (including dev files) |
-| `wp-content/plugins/solvebeam-boilerplate` | `./build/stage-2/` | Built distribution version |
+| `wp-content/plugins/solvebeam-mermaid-dev` | `./` | Live development (including dev files) |
+| `wp-content/plugins/solvebeam-mermaid` | `./build/stage-2/` | Built distribution version |
 
 This lets you test both the raw source and the production build side-by-side.
 
@@ -58,7 +60,7 @@ composer run make-pot
 After updating the POT/PO files, AI can be useful for filling untranslated strings in a locale file, for example:
 
 ```text
-Can you translate the untranslated texts in languages/solvebeam-boilerplate-nl_NL.po?
+Can you translate the untranslated texts in languages/solvebeam-mermaid-nl_NL.po?
 ```
 
 ### Linting & analysis
@@ -68,7 +70,7 @@ composer run phpcs
 composer run rector
 ```
 
-Optional development tools that may be useful, but are not included by default in this boilerplate for now:
+Optional development tools that may be useful, but are not included by default in this Mermaid plugin for now:
 
 #### Psalm
 
@@ -80,7 +82,7 @@ Optional development tools that may be useful, but are not included by default i
 
 ## Architecture & Conventions
 
-This boilerplate follows the [SolveBeam Plugin Development Guidelines](https://github.com/solvebeam). Key conventions that may not be immediately obvious:
+This Mermaid plugin follows the [SolveBeam Plugin Development Guidelines](https://github.com/solvebeam). Key conventions that may not be immediately obvious:
 
 ### Why `psr-4/` instead of `src/`
 
@@ -92,7 +94,7 @@ Every PHP file must start with `declare(strict_types=1);` — no exceptions.
 
 ### Flat namespace architecture
 
-All classes live directly under a single namespace (e.g. `SolveBeam\WordPressPluginBoilerplate`). No sub-namespaces, no deep folder structure. Everything goes into `psr-4/` directly.
+All classes live directly under a single namespace (e.g. `SolveBeam\WordPressMermaid`). No sub-namespaces, no deep folder structure. Everything goes into `psr-4/` directly.
 
 ### Minimal visibility surface
 
@@ -137,8 +139,8 @@ The `.distignore` file ensures development-only files (config files, build tooli
 ## Directory Structure
 
 ```
-solvebeam-boilerplate/
-├── solvebeam-boilerplate.php   # Main plugin file (bootstrap)
+solvebeam-mermaid/
+├── solvebeam-mermaid.php   # Main plugin file (bootstrap)
 ├── composer.json
 ├── package.json
 ├── .wp-env.json

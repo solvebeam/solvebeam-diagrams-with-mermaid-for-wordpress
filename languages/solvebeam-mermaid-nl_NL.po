@@ -11,26 +11,26 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.9\n"
-"X-Domain: solvebeam-boilerplate\n"
+"X-Domain: solvebeam-mermaid\n"
 
 #. Plugin Name of the plugin
-#: solvebeam-boilerplate.php:11
-msgid "SolveBeam Boilerplate"
+#: solvebeam-mermaid.php:11
+msgid "SolveBeam Mermaid"
 msgstr ""
 
 #. Plugin URI of the plugin
 #. Author URI of the plugin
-#: solvebeam-boilerplate.php:12 solvebeam-boilerplate.php:18
+#: solvebeam-mermaid.php:12 solvebeam-mermaid.php:18
 msgid "https://www.solvebeam.com/"
 msgstr "https://www.solvebeam.com/"
 
 #. Description of the plugin
-#: solvebeam-boilerplate.php:13
-msgid "A modern WordPress plugin boilerplate by SolveBeam, providing a structured foundation for building scalable and maintainable plugins."
-msgstr "Een moderne WordPress plugin boilerplate van SolveBeam, die een gestructureerde basis biedt voor het bouwen van schaalbare en onderhoudbare plugins."
+#: solvebeam-mermaid.php:13
+msgid "A modern WordPress plugin for creating Mermaid diagrams by SolveBeam."
+msgstr "Een moderne WordPress-plugin voor het maken van Mermaid-diagrammen door SolveBeam."
 
 #. Author of the plugin
-#: solvebeam-boilerplate.php:17
+#: solvebeam-mermaid.php:17
 msgid "SolveBeam"
 msgstr "SolveBeam"
 
