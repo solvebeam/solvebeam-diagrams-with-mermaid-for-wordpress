@@ -1,11 +1,11 @@
 {
-	"name": "solvebeam/solvebeam-wordpress-plugin-boilerplate",
-	"description": "A modern WordPress plugin boilerplate by SolveBeam, providing a structured foundation for building scalable and maintainable plugins.",
+	"name": "solvebeam/solvebeam-mermaid-for-wordpress",
+	"description": "A modern WordPress plugin for creating Mermaid diagrams by SolveBeam, providing a structured foundation for building scalable and maintainable plugins.",
 	"type": "wordpress-plugin",
 	"license": "GPL-2.0-or-later",
 	"autoload": {
 		"psr-4": {
-			"SolveBeam\\WordPressPluginBoilerplate\\": "psr-4/"
+			"SolveBeam\\WordPressMermaid\\": "psr-4/"
 		}
 	},
 	"authors": [
@@ -59,24 +59,24 @@
 				"woocommerce/action-scheduler"
 			]
 		},
-		"wp-slug": "solvebeam-boilerplate"
+		"wp-slug": "solvebeam-mermaid"
 	},
 	"scripts": {
 		"build": [
 			"rm -rf ./build/stage-1",
-			"rm -rf ./build/solvebeam-boilerplate/*",
+			"rm -rf ./build/solvebeam-mermaid/*",
 			"rsync --recursive --verbose --exclude-from=.distignore --exclude=/vendor/ ./ ./build/stage-1/",
 			"composer install --no-dev --prefer-dist --optimize-autoloader --working-dir=./build/stage-1/",
-			"rsync --recursive --verbose --exclude-from=.distignore ./build/stage-1/ ./build/solvebeam-boilerplate/",
-			"vendor/bin/wp i18n make-pot ./build/solvebeam-boilerplate/ --slug=solvebeam-boilerplate",
-			"vendor/bin/wp i18n make-mo ./build/solvebeam-boilerplate/languages/",
-			"vendor/bin/wp dist-archive ./build/solvebeam-boilerplate/ --plugin-dirname=solvebeam-boilerplate --force"
+			"rsync --recursive --verbose --exclude-from=.distignore ./build/stage-1/ ./build/solvebeam-mermaid/",
+			"vendor/bin/wp i18n make-pot ./build/solvebeam-mermaid/ --slug=solvebeam-mermaid",
+			"vendor/bin/wp i18n make-mo ./build/solvebeam-mermaid/languages/",
+			"vendor/bin/wp dist-archive ./build/solvebeam-mermaid/ --plugin-dirname=solvebeam-mermaid --force"
 		],
-		"dist-archive": "wp dist-archive . --plugin-dirname=solvebeam-boilerplate",
+		"dist-archive": "wp dist-archive . --plugin-dirname=solvebeam-mermaid",
 		"make-pot": [
 			"@build",
-			"rsync --recursive --delete --verbose ./build/solvebeam-boilerplate/languages/ ./languages/",
-			"vendor/bin/wp i18n update-po ./languages/solvebeam-boilerplate.pot"
+			"rsync --recursive --delete --verbose ./build/solvebeam-mermaid/languages/ ./languages/",
+			"vendor/bin/wp i18n update-po ./languages/solvebeam-mermaid.pot"
 		],
 		"phpcs": "vendor/bin/phpcs",
 		"phpcbf": "vendor/bin/phpcbf",

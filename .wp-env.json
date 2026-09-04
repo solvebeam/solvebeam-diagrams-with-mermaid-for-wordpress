@@ -13,8 +13,8 @@
 		"https://downloads.wordpress.org/plugin/query-monitor.zip"
 	],
 	"mappings": {
-		"wp-content/plugins/solvebeam-boilerplate-dev": "./",
-		"wp-content/plugins/solvebeam-boilerplate": "./build/solvebeam-boilerplate/"
+		"wp-content/plugins/solvebeam-mermaid-dev": "./",
+		"wp-content/plugins/solvebeam-mermaid": "./build/solvebeam-mermaid/"
 	},
 	"testsEnvironment": false
 }

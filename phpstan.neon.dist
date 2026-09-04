@@ -2,4 +2,4 @@ parameters:
     level: max
     paths:
         - psr-4/
-        - solvebeam-boilerplate.php
+        - solvebeam-mermaid.php

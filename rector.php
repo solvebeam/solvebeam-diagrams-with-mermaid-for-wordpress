@@ -5,7 +5,7 @@
  * @author    SolveBeam
  * @copyright 2026 SolveBeam
  * @license   GPL-2.0-or-later
- * @package   SolveBeam\WordPressPluginBoilerplate
+ * @package   SolveBeam\WordPressMermaid
  */
 
 declare(strict_types=1);

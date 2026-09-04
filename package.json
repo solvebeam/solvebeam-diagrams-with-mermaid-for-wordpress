@@ -1,19 +1,19 @@
 {
-	"name": "@solvebeam/solvebeam-wordpress-plugin-boilerplate",
+	"name": "@solvebeam/solvebeam-mermaid-for-wordpress",
 	"version": "1.0.0",
-	"description": "A modern WordPress plugin boilerplate by SolveBeam, providing a structured foundation for building scalable and maintainable plugins.",
+	"description": "A modern WordPress plugin for creating Mermaid diagrams by SolveBeam.",
 	"author": "SolveBeam",
 	"license": "GPL-2.0-or-later",
 	"keywords": [
 		"solvebeam"
 	],
-	"homepage": "https://github.com/solvebeam/solvebeam-wordpress-plugin-boilerplate#readme",
+	"homepage": "https://github.com/solvebeam/solvebeam-mermaid-for-wordpress#readme",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/solvebeam/solvebeam-wordpress-plugin-boilerplate.git"
+		"url": "git+https://github.com/solvebeam/solvebeam-mermaid-for-wordpress.git"
 	},
 	"bugs": {
-		"url": "https://github.com/solvebeam/solvebeam-wordpress-plugin-boilerplate/issues"
+		"url": "https://github.com/solvebeam/solvebeam-mermaid-for-wordpress/issues"
 	},
 	"dependencies": {},
 	"devDependencies": {

@@ -1,31 +1,31 @@
 <?php
 /**
- * SolveBeam Boilerplate
+ * SolveBeam Mermaid
  *
  * @author    SolveBeam
  * @copyright 2026 SolveBeam
  * @license   GPL-2.0-or-later
- * @package   SolveBeam\WordPressPluginBoilerplate
+ * @package   SolveBeam\WordPressMermaid
  *
  * @wordpress-plugin
- * Plugin Name:       SolveBeam Boilerplate
+ * Plugin Name:       SolveBeam Mermaid
  * Plugin URI:        https://www.solvebeam.com/
- * Description:       A modern WordPress plugin boilerplate by SolveBeam, providing a structured foundation for building scalable and maintainable plugins.
+ * Description:       A modern WordPress plugin for creating Mermaid diagrams by SolveBeam, providing a structured foundation for building scalable and maintainable plugins.
  * Version:           1.0.0
  * Requires at least: 6.7
  * Requires PHP:      8.2
  * Author:            SolveBeam
  * Author URI:        https://www.solvebeam.com/
- * Text Domain:       solvebeam-boilerplate
+ * Text Domain:       solvebeam-mermaid
  * Domain Path:       /languages/
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * GitHub URI:        https://github.com/solvebeam/solvebeam-wordpress-plugin-boilerplate
+ * GitHub URI:        https://github.com/solvebeam/solvebeam-mermaid-for-wordpress
  */
 
 declare(strict_types=1);
 
-namespace SolveBeam\WordPressPluginBoilerplate;
+namespace SolveBeam\WordPressMermaid;
 
 if ( ! \defined( 'ABSPATH' ) ) {
 	exit;
@@ -46,7 +46,7 @@ if ( \file_exists( $autoload_path ) ) {
 \add_action(
 	'plugins_loaded',
 	function () {
-		\load_plugin_textdomain( 'solvebeam-boilerplate', false, \dirname( \plugin_basename( __FILE__ ) ) . '/languages' );
+		\load_plugin_textdomain( 'solvebeam-mermaid', false, \dirname( \plugin_basename( __FILE__ ) ) . '/languages' );
 	}
 );
 
