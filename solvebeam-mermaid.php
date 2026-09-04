@@ -12,7 +12,7 @@
  * Plugin URI:        https://www.solvebeam.com/
  * Description:       A plugin for rendering Mermaid diagrams and visualizations from Mermaid code.
  * Version:           1.0.0
- * Requires at least: 6.7
+ * Requires at least: 6.8
  * Requires PHP:      8.2
  * Author:            SolveBeam
  * Author URI:        https://www.solvebeam.com/
