@@ -7,7 +7,7 @@ The block is inspired by [MerPress](https://wordpress.org/plugins/merpress/).
 ## Requirements
 
 - PHP 8.2+
-- WordPress 6.7+
+- WordPress 6.8+
 - Composer
 - Node.js / npm
 
