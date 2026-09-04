@@ -1,0 +1,85 @@
+{
+	"name": "solvebeam/solvebeam-wordpress-plugin-boilerplate",
+	"description": "A modern WordPress plugin boilerplate by SolveBeam, providing a structured foundation for building scalable and maintainable plugins.",
+	"type": "wordpress-plugin",
+	"license": "GPL-2.0-or-later",
+	"autoload": {
+		"psr-4": {
+			"SolveBeam\\WordPressPluginBoilerplate\\": "psr-4/"
+		}
+	},
+	"authors": [
+		{
+			"name": "SolveBeam",
+			"email": "info@solvebeam.com",
+			"homepage": "https://www.solvebeam.com/",
+			"role": "Developer"
+		},
+		{
+			"name": "Remco Tolsma",
+			"email": "info@remcotolsma.nl",
+			"homepage": "https://www.remcotolsma.nl/",
+			"role": "Developer"
+		}
+	],
+	"config": {
+		"allow-plugins": {
+			"automattic/jetpack-autoloader": true,
+			"composer/installers": true,
+			"dealerdirect/phpcodesniffer-composer-installer": true,
+			"phpstan/extension-installer": true
+		},
+		"platform": {
+			"php": "8.3"
+		},
+		"platform-check": false,
+		"sort-packages": true
+	},
+	"require": {
+		"php": "^8.3",
+		"composer/installers": "^2.3",
+		"automattic/jetpack-autoloader": "^5.0"
+	},
+	"require-dev": {
+		"phpstan/extension-installer": "^1.4",
+		"phpstan/phpstan": "^2.2",
+		"pronamic/wp-coding-standards": "^2.5",
+		"rector/rector": "^2.6",
+		"roots/wordpress-no-content": "^6.9",
+		"szepeviktor/phpstan-wordpress": "^2.0",
+		"wp-cli/dist-archive-command": "*",
+		"wp-cli/wp-cli-bundle": "*"
+	},
+	"extra": {
+		"installer-paths": {
+			"packages/{$vendor}/{$name}": [
+				"vendor:pronamic",
+				"vendor:solvebeam",
+				"vendor:wp-pay",
+				"woocommerce/action-scheduler"
+			]
+		},
+		"wp-slug": "solvebeam-boilerplate"
+	},
+	"scripts": {
+		"build": [
+			"rm -rf ./build/stage-1",
+			"rm -rf ./build/solvebeam-boilerplate/*",
+			"rsync --recursive --verbose --exclude-from=.distignore --exclude=/vendor/ ./ ./build/stage-1/",
+			"composer install --no-dev --prefer-dist --optimize-autoloader --working-dir=./build/stage-1/",
+			"rsync --recursive --verbose --exclude-from=.distignore ./build/stage-1/ ./build/solvebeam-boilerplate/",
+			"vendor/bin/wp i18n make-pot ./build/solvebeam-boilerplate/ --slug=solvebeam-boilerplate",
+			"vendor/bin/wp i18n make-mo ./build/solvebeam-boilerplate/languages/",
+			"vendor/bin/wp dist-archive ./build/solvebeam-boilerplate/ --plugin-dirname=solvebeam-boilerplate --force"
+		],
+		"dist-archive": "wp dist-archive . --plugin-dirname=solvebeam-boilerplate",
+		"make-pot": [
+			"@build",
+			"rsync --recursive --delete --verbose ./build/solvebeam-boilerplate/languages/ ./languages/",
+			"vendor/bin/wp i18n update-po ./languages/solvebeam-boilerplate.pot"
+		],
+		"phpcs": "vendor/bin/phpcs",
+		"phpcbf": "vendor/bin/phpcbf",
+		"phpstan": "vendor/bin/phpstan analyse --memory-limit=-1"
+	}
+}

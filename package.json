@@ -1,0 +1,27 @@
+{
+	"name": "@solvebeam/solvebeam-wordpress-plugin-boilerplate",
+	"version": "1.0.0",
+	"description": "A modern WordPress plugin boilerplate by SolveBeam, providing a structured foundation for building scalable and maintainable plugins.",
+	"author": "SolveBeam",
+	"license": "GPL-2.0-or-later",
+	"keywords": [
+		"solvebeam"
+	],
+	"homepage": "https://github.com/solvebeam/solvebeam-wordpress-plugin-boilerplate#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/solvebeam/solvebeam-wordpress-plugin-boilerplate.git"
+	},
+	"bugs": {
+		"url": "https://github.com/solvebeam/solvebeam-wordpress-plugin-boilerplate/issues"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"@wordpress/env": "^11.14.0",
+		"@wordpress/scripts": "^34.2.0"
+	},
+	"prettier": "@wordpress/prettier-config",
+	"scripts": {
+		"lint:pkg-json": "wp-scripts lint-pkg-json"
+	}
+}
