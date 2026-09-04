@@ -1,6 +1,6 @@
 {
 	"name": "solvebeam/solvebeam-mermaid-for-wordpress",
-	"description": "A modern WordPress plugin for creating Mermaid diagrams by SolveBeam, providing a structured foundation for building scalable and maintainable plugins.",
+	"description": "A plugin for rendering Mermaid diagrams and visualizations from Mermaid code.",
 	"type": "wordpress-plugin",
 	"license": "GPL-2.0-or-later",
 	"autoload": {
@@ -68,7 +68,7 @@
 			"rsync --recursive --verbose --exclude-from=.distignore --exclude=/vendor/ ./ ./build/stage-1/",
 			"composer install --no-dev --prefer-dist --optimize-autoloader --working-dir=./build/stage-1/",
 			"rsync --recursive --verbose --exclude-from=.distignore ./build/stage-1/ ./build/solvebeam-mermaid/",
-			"vendor/bin/wp i18n make-pot ./build/solvebeam-mermaid/ --slug=solvebeam-mermaid",
+			"vendor/bin/wp i18n make-pot ./build/solvebeam-mermaid/ --slug=solvebeam-mermaid --exclude=blocks/*.js",
 			"vendor/bin/wp i18n make-mo ./build/solvebeam-mermaid/languages/",
 			"vendor/bin/wp dist-archive ./build/solvebeam-mermaid/ --plugin-dirname=solvebeam-mermaid --force"
 		],

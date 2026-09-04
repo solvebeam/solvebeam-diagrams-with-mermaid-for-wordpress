@@ -10,7 +10,7 @@
  * @wordpress-plugin
  * Plugin Name:       SolveBeam Mermaid
  * Plugin URI:        https://www.solvebeam.com/
- * Description:       A modern WordPress plugin for creating Mermaid diagrams by SolveBeam, providing a structured foundation for building scalable and maintainable plugins.
+ * Description:       A plugin for rendering Mermaid diagrams and visualizations from Mermaid code.
  * Version:           1.0.0
  * Requires at least: 6.7
  * Requires PHP:      8.2

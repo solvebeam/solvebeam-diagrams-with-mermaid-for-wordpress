@@ -1,0 +1,26 @@
+.wp-block-solvebeam-mermaid {
+	margin: 1.5em 0;
+}
+
+.solvebeam-mermaid-output {
+	overflow-x: auto;
+	padding: 1rem;
+}
+
+.solvebeam-mermaid-output svg {
+	display: block;
+	height: auto;
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+.solvebeam-mermaid-source {
+	margin: 0;
+	white-space: pre-wrap;
+}
+
+.solvebeam-mermaid-error {
+	color: #b32d2e;
+	font-family: monospace;
+	white-space: pre-wrap;
+}

@@ -49,6 +49,20 @@ final class Plugin {
 		private readonly string $plugin_file
 	) {
 		\add_action( 'plugins_loaded', $this->plugins_loaded( ... ) );
+		\add_action( 'init', $this->register_blocks( ... ) );
+	}
+
+	/**
+	 * Register the Mermaid block.
+	 *
+	 * @return void
+	 */
+	public function register_blocks(): void {
+		$block_path = \dirname( $this->plugin_file ) . '/blocks/mermaid';
+
+		if ( \file_exists( $block_path . '/block.json' ) ) {
+			\register_block_type( $block_path );
+		}
 	}
 
 	/**

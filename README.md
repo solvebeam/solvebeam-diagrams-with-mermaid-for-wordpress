@@ -1,6 +1,6 @@
 # SolveBeam Mermaid
 
-A modern WordPress plugin for creating Mermaid diagrams by SolveBeam, providing a structured foundation for building scalable and maintainable plugins.
+A plugin for rendering Mermaid diagrams and visualizations from Mermaid code.
 
 The block is inspired by [MerPress](https://wordpress.org/plugins/merpress/).
 
@@ -19,6 +19,17 @@ npm install
 ```
 
 ## Development
+
+The Mermaid block source lives in `blocks-src/mermaid/`. Build the editor and
+frontend assets into `blocks/` with:
+
+```sh
+npm run build
+```
+
+Use `npm start` while developing. The block stores Mermaid code in the
+post and renders a live preview in the block editor and as an SVG on the
+frontend.
 
 ### Local environment (wp-env)
 

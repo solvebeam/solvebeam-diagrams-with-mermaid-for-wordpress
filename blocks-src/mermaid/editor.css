@@ -1,0 +1,18 @@
+.solvebeam-mermaid-preview-wrap {
+	border: 1px solid #dcdcde;
+	min-height: 160px;
+	padding: 24px;
+}
+
+.solvebeam-mermaid-preview svg {
+	display: block;
+	height: auto;
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+.solvebeam-mermaid-error {
+	color: #b32d2e;
+	font-family: monospace;
+	white-space: pre-wrap;
+}

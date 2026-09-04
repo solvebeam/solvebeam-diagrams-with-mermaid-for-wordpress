@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-08-31T18:23:13+00:00\n"
+"POT-Creation-Date: 2026-09-04T12:59:03+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: solvebeam-mermaid\n"
@@ -28,7 +28,7 @@ msgstr ""
 
 #. Description of the plugin
 #: solvebeam-mermaid.php:13
-msgid "A modern WordPress plugin for creating Mermaid diagrams by SolveBeam."
+msgid "A plugin for rendering Mermaid diagrams and visualizations from Mermaid code."
 msgstr ""
 
 #. Author of the plugin
@@ -36,6 +36,35 @@ msgstr ""
 msgid "SolveBeam"
 msgstr ""
 
-#: psr-4/Plugin.php:73
+#: psr-4/Plugin.php:87
 msgid "Settings"
+msgstr ""
+
+#: blocks-src/mermaid/index.js:49
+msgid "Unable to render this diagram."
+msgstr ""
+
+#: blocks-src/mermaid/index.js:81
+msgid "Mermaid"
+msgstr ""
+
+#: blocks-src/mermaid/index.js:84
+#: blocks-src/mermaid/index.js:95
+msgid "Mermaid code"
+msgstr ""
+
+#: blocks-src/mermaid/index.js:118
+msgid "Mermaid diagram"
+msgstr ""
+
+#: blocks-src/mermaid/block.json
+#: blocks/mermaid/block.json
+msgctxt "block title"
+msgid "Mermaid"
+msgstr ""
+
+#: blocks-src/mermaid/block.json
+#: blocks/mermaid/block.json
+msgctxt "block description"
+msgid "Enter Mermaid code and render it as diagrams or visualizations."
 msgstr ""
