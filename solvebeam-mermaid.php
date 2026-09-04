@@ -27,9 +27,7 @@ declare(strict_types=1);
 
 namespace SolveBeam\WordPressMermaid;
 
-if ( ! \defined( 'ABSPATH' ) ) {
-	exit;
-}
+if ( ! defined( 'ABSPATH' ) ) exit;
 
 /**
  * Autoload.
