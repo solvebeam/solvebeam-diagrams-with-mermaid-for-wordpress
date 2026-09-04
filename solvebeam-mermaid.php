@@ -40,14 +40,4 @@ if ( \file_exists( $autoload_path ) ) {
 	require_once $autoload_path;
 }
 
-/**
- * Bootstrap.
- */
-\add_action(
-	'plugins_loaded',
-	function () {
-		\load_plugin_textdomain( 'solvebeam-mermaid', false, \dirname( \plugin_basename( __FILE__ ) ) . '/languages' );
-	}
-);
-
 Plugin::instance( __FILE__ );
