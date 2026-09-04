@@ -27,15 +27,16 @@ declare(strict_types=1);
 
 namespace SolveBeam\WordPressMermaid;
 
-if ( ! defined( 'ABSPATH' ) ) exit;
-
-/**
- * Autoload.
- */
-$autoload_path = __DIR__ . '/vendor/autoload_packages.php';
-
-if ( \file_exists( $autoload_path ) ) {
-	require_once $autoload_path;
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
 }
 
-Plugin::instance( __FILE__ );
+( static function (): void {
+	$autoload_path = __DIR__ . '/vendor/autoload_packages.php';
+
+	if ( \file_exists( $autoload_path ) ) {
+		require_once $autoload_path;
+	}
+
+	Plugin::instance( __FILE__ );
+} )();
