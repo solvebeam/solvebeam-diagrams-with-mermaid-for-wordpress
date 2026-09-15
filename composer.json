@@ -37,15 +37,15 @@
 	},
 	"require": {
 		"php": "^8.3",
-		"composer/installers": "^2.3",
-		"automattic/jetpack-autoloader": "^5.0"
+		"automattic/jetpack-autoloader": "^6.0",
+		"composer/installers": "^2.3"
 	},
 	"require-dev": {
 		"phpstan/extension-installer": "^1.4",
 		"phpstan/phpstan": "^2.2",
 		"pronamic/wp-coding-standards": "^2.5",
 		"rector/rector": "^2.6",
-		"roots/wordpress-no-content": "^6.9",
+		"roots/wordpress-no-content": "^7.1",
 		"szepeviktor/phpstan-wordpress": "^2.0",
 		"wp-cli/dist-archive-command": "*",
 		"wp-cli/wp-cli-bundle": "*"
