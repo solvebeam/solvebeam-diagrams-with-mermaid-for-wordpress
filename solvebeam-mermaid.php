@@ -38,5 +38,5 @@ if ( ! defined( 'ABSPATH' ) ) {
 		require_once $autoload_path;
 	}
 
-	Plugin::instance( __FILE__ );
+	Plugin::instance();
 } )();

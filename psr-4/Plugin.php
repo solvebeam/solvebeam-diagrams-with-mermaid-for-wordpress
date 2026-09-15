@@ -26,12 +26,11 @@ final class Plugin {
 	/**
 	 * Return instance of this class.
 	 *
-	 * @param string $plugin_file The plugin file.
 	 * @return self A single instance of this class.
 	 */
-	public static function instance( string $plugin_file ) {
+	public static function instance() {
 		if ( null === self::$instance ) {
-			self::$instance = new self( $plugin_file );
+			self::$instance = new self();
 		}
 
 		return self::$instance;
@@ -39,56 +38,19 @@ final class Plugin {
 
 	/**
 	 * Construct.
-	 *
-	 * @param string $plugin_file The plugin file.
 	 */
-	private function __construct(
-		/**
-		 * Plugin file.
-		 */
-		private readonly string $plugin_file
-	) {
-		\add_action( 'plugins_loaded', $this->plugins_loaded( ... ) );
+	private function __construct() {
 		\add_action( 'init', $this->register_blocks( ... ) );
 	}
 
 	/**
 	 * Register the Mermaid block.
 	 *
+	 * @throws \RuntimeException When the block assets cannot be found.
+	 *
 	 * @return void
 	 */
 	public function register_blocks(): void {
-		$block_path = \dirname( $this->plugin_file ) . '/blocks/mermaid';
-
-		if ( \file_exists( $block_path . '/block.json' ) ) {
-			\register_block_type( $block_path );
-		}
-	}
-
-	/**
-	 * Plugins loaded.
-	 *
-	 * @return void
-	 */
-	public function plugins_loaded() {
-		\add_filter( 'plugin_action_links_' . \plugin_basename( $this->plugin_file ), $this->add_plugin_action_links( ... ) );
-	}
-
-	/**
-	 * Add plugin action links.
-	 *
-	 * @param array<string> $links The existing links.
-	 * @return array<string> The modified links.
-	 */
-	public function add_plugin_action_links( array $links ): array {
-		$settings_link = \sprintf(
-			'<a href="%s">%s</a>',
-			\esc_url( '#' ),
-			\esc_html__( 'Settings', 'solvebeam-mermaid' )
-		);
-
-		\array_unshift( $links, $settings_link );
-
-		return $links;
+		\register_block_type( __DIR__ . '/../blocks/mermaid' );
 	}
 }
