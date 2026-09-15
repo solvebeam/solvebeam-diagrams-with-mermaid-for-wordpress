@@ -1,5 +1,6 @@
 === SolveBeam Mermaid ===
 Contributors: solvebeam
+Donate link: https://github.com/sponsors/solvebeam
 Tags: solvebeam
 Requires at least: 6.8
 Tested up to: 7.1
