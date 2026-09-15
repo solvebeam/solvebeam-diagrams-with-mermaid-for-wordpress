@@ -9,11 +9,11 @@
  *
  * @wordpress-plugin
  * Plugin Name:       SolveBeam Mermaid
- * Plugin URI:        https://www.solvebeam.com/
+ * Plugin URI:        https://www.solvebeam.com/wordpress/plugins/solvebeam-mermaid/
  * Description:       A plugin for rendering Mermaid diagrams and visualizations from Mermaid code.
  * Version:           1.0.0
  * Requires at least: 6.8
- * Requires PHP:      8.2
+ * Requires PHP:      8.3
  * Author:            SolveBeam
  * Author URI:        https://www.solvebeam.com/
  * Text Domain:       solvebeam-mermaid

@@ -63,6 +63,7 @@
 	},
 	"scripts": {
 		"build": [
+			"npm run build",
 			"rm -rf ./build/stage-1",
 			"rm -rf ./build/solvebeam-mermaid/*",
 			"rsync --recursive --verbose --exclude-from=.distignore --exclude=/vendor/ ./ ./build/stage-1/",

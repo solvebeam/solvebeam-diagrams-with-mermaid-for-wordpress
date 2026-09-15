@@ -77,9 +77,7 @@ function Edit( { attributes, setAttributes } ) {
 	return (
 		<>
 			<InspectorControls>
-				<PanelBody
-					title={ __( 'Mermaid', 'solvebeam-mermaid' ) }
-				>
+				<PanelBody title={ __( 'Mermaid', 'solvebeam-mermaid' ) }>
 					<TextareaControl
 						label={ __( 'Mermaid code', 'solvebeam-mermaid' ) }
 						value={ code }
