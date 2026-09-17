@@ -16,6 +16,7 @@ phpcs.xml.dist
 phpstan.neon.dist
 
 /GEMINI.md
+/README.md
 
 /rector.php
 

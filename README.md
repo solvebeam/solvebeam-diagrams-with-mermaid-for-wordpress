@@ -2,11 +2,9 @@
 
 A plugin for rendering Mermaid diagrams and visualizations from Mermaid code.
 
-The block is inspired by [MerPress](https://wordpress.org/plugins/merpress/).
-
 ## Requirements
 
-- PHP 8.2+
+- PHP 8.3+
 - WordPress 6.8+
 - Composer
 - Node.js / npm
@@ -43,7 +41,7 @@ The `.wp-env.json` maps the plugin twice into the WordPress environment:
 | Mount path | Source | Purpose |
 |---|---|---|
 | `wp-content/plugins/solvebeam-diagrams-with-mermaid-dev` | `./` | Live development (including dev files) |
-| `wp-content/plugins/solvebeam-diagrams-with-mermaid` | `./build/stage-2/` | Built distribution version |
+| `wp-content/plugins/solvebeam-diagrams-with-mermaid` | `./build/solvebeam-diagrams-with-mermaid/` | WordPress.org distribution build |
 
 This lets you test both the raw source and the production build side-by-side.
 
@@ -53,12 +51,14 @@ This lets you test both the raw source and the production build side-by-side.
 composer run build
 ```
 
-The build uses a **two-stage rsync** process:
+This creates both distribution variants after one shared preparation step:
 
-1. **Stage 1** — copies source (respecting `.distignore`), then runs `composer install --no-dev` to get production-only dependencies.
-2. **Stage 2** — copies stage 1 output (again respecting `.distignore`) to strip any remaining dev artifacts, then generates `.pot` / `.mo` translation files and creates a dist archive via `wp dist-archive`.
+| Variant | Composer script | Archive | Translations |
+|---|---|---|---|
+| WordPress.org | `composer run build:wordpress-org` | `build/solvebeam-diagrams-with-mermaid.{version}.zip` | Excludes the complete `languages/` directory; translations are provided by WordPress.org language packs. |
+| Standalone | `composer run build:standalone` | `build/solvebeam-diagrams-with-mermaid-standalone.{version}.zip` | Includes the POT, PO, and compiled MO files for installations outside WordPress.org. |
 
-The final distributable ZIP is created from `build/stage-2/`.
+Both archives extract to the `solvebeam-diagrams-with-mermaid/` plugin directory. The prepared WordPress.org and standalone trees remain available in `build/solvebeam-diagrams-with-mermaid/` and `build/solvebeam-diagrams-with-mermaid-standalone/` respectively.
 
 ### Translations
 
@@ -67,6 +67,8 @@ Use the existing i18n scripts to keep translation files in sync:
 ```sh
 composer run make-pot
 ```
+
+This rebuilds the standalone distribution, copies its generated language files back to `languages/`, and updates the PO files from the POT template.
 
 After updating the POT/PO files, AI can be useful for filling untranslated strings in a locale file, for example:
 

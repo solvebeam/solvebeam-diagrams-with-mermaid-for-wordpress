@@ -63,20 +63,38 @@
 	},
 	"scripts": {
 		"build": [
+			"@build:prepare",
+			"@build:archive:wordpress-org",
+			"@build:archive:standalone"
+		],
+		"build:prepare": [
 			"npm run build",
 			"rm -rf ./build/stage-1",
-			"rm -rf ./build/solvebeam-diagrams-with-mermaid/*",
 			"rsync --recursive --verbose --exclude-from=.distignore --exclude=/vendor/ ./ ./build/stage-1/",
-			"composer install --no-dev --prefer-dist --optimize-autoloader --working-dir=./build/stage-1/",
-			"rsync --recursive --verbose --exclude-from=.distignore ./build/stage-1/ ./build/solvebeam-diagrams-with-mermaid/",
-			"vendor/bin/wp i18n make-pot ./build/solvebeam-diagrams-with-mermaid/ --slug=solvebeam-diagrams-with-mermaid --exclude=blocks/*.js",
-			"vendor/bin/wp i18n make-mo ./build/solvebeam-diagrams-with-mermaid/languages/",
+			"composer install --no-dev --prefer-dist --optimize-autoloader --working-dir=./build/stage-1/"
+		],
+		"build:archive:wordpress-org": [
+			"rsync --recursive --delete --delete-excluded --verbose --exclude-from=.distignore --exclude=languages/ ./build/stage-1/ ./build/solvebeam-diagrams-with-mermaid/",
 			"vendor/bin/wp dist-archive ./build/solvebeam-diagrams-with-mermaid/ --plugin-dirname=solvebeam-diagrams-with-mermaid --force"
+		],
+		"build:archive:standalone": [
+			"rsync --recursive --delete --delete-excluded --verbose --exclude-from=.distignore ./build/stage-1/ ./build/solvebeam-diagrams-with-mermaid-standalone/",
+			"vendor/bin/wp i18n make-pot ./build/solvebeam-diagrams-with-mermaid-standalone/ --slug=solvebeam-diagrams-with-mermaid --exclude=blocks/*.js",
+			"vendor/bin/wp i18n make-mo ./build/solvebeam-diagrams-with-mermaid-standalone/languages/",
+			"vendor/bin/wp dist-archive ./build/solvebeam-diagrams-with-mermaid-standalone/ --plugin-dirname=solvebeam-diagrams-with-mermaid --filename-format={name}-standalone.{version} --force"
+		],
+		"build:wordpress-org": [
+			"@build:prepare",
+			"@build:archive:wordpress-org"
+		],
+		"build:standalone": [
+			"@build:prepare",
+			"@build:archive:standalone"
 		],
 		"dist-archive": "wp dist-archive . --plugin-dirname=solvebeam-diagrams-with-mermaid",
 		"make-pot": [
-			"@build",
-			"rsync --recursive --delete --verbose ./build/solvebeam-diagrams-with-mermaid/languages/ ./languages/",
+			"@build:standalone",
+			"rsync --recursive --delete --verbose ./build/solvebeam-diagrams-with-mermaid-standalone/languages/ ./languages/",
 			"vendor/bin/wp i18n update-po ./languages/solvebeam-diagrams-with-mermaid.pot"
 		],
 		"phpcs": "vendor/bin/phpcs",

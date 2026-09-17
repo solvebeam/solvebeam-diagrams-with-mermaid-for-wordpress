@@ -2,14 +2,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SolveBeam Default Customer Location for WooCommerce 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/solvebeam-diagrams-with-mermaid\n"
+"POT-Creation-Date: 2026-09-04T12:42:57+00:00\n"
+"PO-Revision-Date: 2026-09-17 20:00+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: nl_NL\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-09-04T12:42:57+00:00\n"
-"PO-Revision-Date: 2026-09-17T15:40:00+00:00\n"
-"Language: nl_NL\n"
 "X-Generator: Poedit 3.9\n"
 "X-Domain: solvebeam-diagrams-with-mermaid\n"
 
@@ -21,7 +21,7 @@ msgstr "SolveBeam Diagrams with Mermaid"
 #. Plugin URI of the plugin
 #: solvebeam-diagrams-with-mermaid.php:12
 msgid "https://www.solvebeam.com/wordpress/plugins/solvebeam-diagrams-with-mermaid/"
-msgstr ""
+msgstr "https://www.solvebeam.com/wordpress/plugins/solvebeam-diagrams-with-mermaid/"
 
 #. Description of the plugin
 #: solvebeam-diagrams-with-mermaid.php:13
@@ -55,14 +55,12 @@ msgstr "Mermaid-code"
 msgid "Mermaid diagram"
 msgstr "Mermaid-diagram"
 
-#: blocks-src/mermaid-diagram/block.json
-#: blocks/mermaid-diagram/block.json
+#: blocks-src/mermaid-diagram/block.json blocks/mermaid-diagram/block.json
 msgctxt "block title"
 msgid "Mermaid"
 msgstr "Mermaid"
 
-#: blocks-src/mermaid-diagram/block.json
-#: blocks/mermaid-diagram/block.json
+#: blocks-src/mermaid-diagram/block.json blocks/mermaid-diagram/block.json
 msgctxt "block description"
 msgid "Enter Mermaid code and render it as diagrams or visualizations."
 msgstr "Voer Mermaid-code in en geef deze weer als diagrammen of visualisaties."
