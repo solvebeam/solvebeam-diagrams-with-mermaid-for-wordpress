@@ -1,7 +1,7 @@
 === SolveBeam Diagrams with Mermaid ===
 Contributors: solvebeam
 Donate link: https://github.com/sponsors/solvebeam
-Tags: solvebeam
+Tags: solvebeam, mermaid, diagrams, visualization, flowchart
 Requires at least: 6.8
 Tested up to: 7.1
 Requires PHP: 8.3
