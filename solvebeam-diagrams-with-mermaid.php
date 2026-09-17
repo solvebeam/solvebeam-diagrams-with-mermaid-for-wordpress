@@ -17,7 +17,6 @@
  * Author:            SolveBeam
  * Author URI:        https://www.solvebeam.com/
  * Text Domain:       solvebeam-diagrams-with-mermaid
- * Domain Path:       /languages/
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * GitHub URI:        https://github.com/solvebeam/solvebeam-mermaid-for-wordpress
