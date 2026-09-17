@@ -1,5 +1,5 @@
 {
-	"name": "solvebeam/solvebeam-mermaid-for-wordpress",
+	"name": "solvebeam/solvebeam-diagrams-with-mermaid-for-wordpress",
 	"description": "A plugin for rendering Mermaid diagrams and visualizations from Mermaid code.",
 	"type": "wordpress-plugin",
 	"license": "GPL-2.0-or-later",
@@ -59,25 +59,25 @@
 				"woocommerce/action-scheduler"
 			]
 		},
-		"wp-slug": "solvebeam-mermaid"
+		"wp-slug": "solvebeam-diagrams-with-mermaid"
 	},
 	"scripts": {
 		"build": [
 			"npm run build",
 			"rm -rf ./build/stage-1",
-			"rm -rf ./build/solvebeam-mermaid/*",
+			"rm -rf ./build/solvebeam-diagrams-with-mermaid/*",
 			"rsync --recursive --verbose --exclude-from=.distignore --exclude=/vendor/ ./ ./build/stage-1/",
 			"composer install --no-dev --prefer-dist --optimize-autoloader --working-dir=./build/stage-1/",
-			"rsync --recursive --verbose --exclude-from=.distignore ./build/stage-1/ ./build/solvebeam-mermaid/",
-			"vendor/bin/wp i18n make-pot ./build/solvebeam-mermaid/ --slug=solvebeam-mermaid --exclude=blocks/*.js",
-			"vendor/bin/wp i18n make-mo ./build/solvebeam-mermaid/languages/",
-			"vendor/bin/wp dist-archive ./build/solvebeam-mermaid/ --plugin-dirname=solvebeam-mermaid --force"
+			"rsync --recursive --verbose --exclude-from=.distignore ./build/stage-1/ ./build/solvebeam-diagrams-with-mermaid/",
+			"vendor/bin/wp i18n make-pot ./build/solvebeam-diagrams-with-mermaid/ --slug=solvebeam-diagrams-with-mermaid --exclude=blocks/*.js",
+			"vendor/bin/wp i18n make-mo ./build/solvebeam-diagrams-with-mermaid/languages/",
+			"vendor/bin/wp dist-archive ./build/solvebeam-diagrams-with-mermaid/ --plugin-dirname=solvebeam-diagrams-with-mermaid --force"
 		],
-		"dist-archive": "wp dist-archive . --plugin-dirname=solvebeam-mermaid",
+		"dist-archive": "wp dist-archive . --plugin-dirname=solvebeam-diagrams-with-mermaid",
 		"make-pot": [
 			"@build",
-			"rsync --recursive --delete --verbose ./build/solvebeam-mermaid/languages/ ./languages/",
-			"vendor/bin/wp i18n update-po ./languages/solvebeam-mermaid.pot"
+			"rsync --recursive --delete --verbose ./build/solvebeam-diagrams-with-mermaid/languages/ ./languages/",
+			"vendor/bin/wp i18n update-po ./languages/solvebeam-diagrams-with-mermaid.pot"
 		],
 		"phpcs": "vendor/bin/phpcs",
 		"phpcbf": "vendor/bin/phpcbf",

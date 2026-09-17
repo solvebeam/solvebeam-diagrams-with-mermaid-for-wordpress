@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 
-<ruleset name="SolveBeam Mermaid">
+<ruleset name="SolveBeam Diagrams with Mermaid">
 	<file>.</file>
 
 	<exclude-pattern type="relative">^blocks/*</exclude-pattern>

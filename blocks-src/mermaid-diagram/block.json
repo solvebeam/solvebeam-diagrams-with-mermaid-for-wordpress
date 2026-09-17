@@ -1,13 +1,13 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 3,
-	"name": "solvebeam/mermaid",
+	"name": "solvebeam-diagrams-with-mermaid/mermaid-diagram",
 	"version": "1.0.0",
 	"title": "Mermaid",
 	"category": "embed",
 	"icon": "chart-line",
 	"description": "Enter Mermaid code and render it as diagrams or visualizations.",
-	"textdomain": "solvebeam-mermaid",
+	"textdomain": "solvebeam-diagrams-with-mermaid",
 	"attributes": {
 		"code": {
 			"type": "string",

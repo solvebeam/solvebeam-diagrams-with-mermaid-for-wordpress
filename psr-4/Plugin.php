@@ -51,6 +51,6 @@ final class Plugin {
 	 * @return void
 	 */
 	public function register_blocks(): void {
-		\register_block_type( __DIR__ . '/../blocks/mermaid' );
+		\register_block_type( __DIR__ . '/../blocks/mermaid-diagram' );
 	}
 }

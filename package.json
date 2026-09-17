@@ -1,5 +1,5 @@
 {
-	"name": "@solvebeam/solvebeam-mermaid-for-wordpress",
+	"name": "@solvebeam/solvebeam-diagrams-with-mermaid-for-wordpress",
 	"version": "1.0.0",
 	"description": "A plugin for rendering Mermaid diagrams and visualizations from Mermaid code.",
 	"author": "SolveBeam",

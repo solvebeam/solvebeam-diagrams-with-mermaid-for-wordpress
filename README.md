@@ -1,4 +1,4 @@
-# SolveBeam Mermaid
+# SolveBeam Diagrams with Mermaid
 
 A plugin for rendering Mermaid diagrams and visualizations from Mermaid code.
 
@@ -20,7 +20,7 @@ npm install
 
 ## Development
 
-The Mermaid block source lives in `blocks-src/mermaid/`. Build the editor and
+The Mermaid block source lives in `blocks-src/mermaid-diagram/`. Build the editor and
 frontend assets into `blocks/` with:
 
 ```sh
@@ -42,8 +42,8 @@ The `.wp-env.json` maps the plugin twice into the WordPress environment:
 
 | Mount path | Source | Purpose |
 |---|---|---|
-| `wp-content/plugins/solvebeam-mermaid-dev` | `./` | Live development (including dev files) |
-| `wp-content/plugins/solvebeam-mermaid` | `./build/stage-2/` | Built distribution version |
+| `wp-content/plugins/solvebeam-diagrams-with-mermaid-dev` | `./` | Live development (including dev files) |
+| `wp-content/plugins/solvebeam-diagrams-with-mermaid` | `./build/stage-2/` | Built distribution version |
 
 This lets you test both the raw source and the production build side-by-side.
 
@@ -71,7 +71,7 @@ composer run make-pot
 After updating the POT/PO files, AI can be useful for filling untranslated strings in a locale file, for example:
 
 ```text
-Can you translate the untranslated texts in languages/solvebeam-mermaid-nl_NL.po?
+Can you translate the untranslated texts in languages/solvebeam-diagrams-with-mermaid-nl_NL.po?
 ```
 
 ### Linting & analysis
@@ -150,8 +150,8 @@ The `.distignore` file ensures development-only files (config files, build tooli
 ## Directory Structure
 
 ```
-solvebeam-mermaid/
-├── solvebeam-mermaid.php   # Main plugin file (bootstrap)
+solvebeam-diagrams-with-mermaid/
+├── solvebeam-diagrams-with-mermaid.php   # Main plugin file (bootstrap)
 ├── composer.json
 ├── package.json
 ├── .wp-env.json

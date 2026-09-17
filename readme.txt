@@ -1,4 +1,4 @@
-=== SolveBeam Mermaid ===
+=== SolveBeam Diagrams with Mermaid ===
 Contributors: solvebeam
 Donate link: https://github.com/sponsors/solvebeam
 Tags: solvebeam
@@ -13,7 +13,7 @@ A plugin for rendering Mermaid diagrams and visualizations from Mermaid code.
 
 == Description ==
 
-SolveBeam Mermaid adds a block for creating diagrams and visualizations with
+SolveBeam Diagrams with Mermaid adds a block for creating diagrams and visualizations with
 [https://mermaid.js.org/ Mermaid]. Enter Mermaid syntax in the block editor and
 the diagram is rendered in the editor and on the front end.
 

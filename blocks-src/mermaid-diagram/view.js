@@ -7,7 +7,9 @@ mermaid.initialize( {
 } );
 
 const renderDiagrams = async () => {
-	const blocks = document.querySelectorAll( '.wp-block-solvebeam-mermaid' );
+	const blocks = document.querySelectorAll(
+		'.wp-block-solvebeam-diagrams-with-mermaid-mermaid-diagram'
+	);
 
 	for ( const block of blocks ) {
 		const source = block.querySelector( '.solvebeam-mermaid-source' );

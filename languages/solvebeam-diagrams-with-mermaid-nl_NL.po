@@ -1,0 +1,68 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: SolveBeam Default Customer Location for WooCommerce 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/solvebeam-diagrams-with-mermaid\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-09-04T12:42:57+00:00\n"
+"PO-Revision-Date: 2026-09-17T15:40:00+00:00\n"
+"Language: nl_NL\n"
+"X-Generator: Poedit 3.9\n"
+"X-Domain: solvebeam-diagrams-with-mermaid\n"
+
+#. Plugin Name of the plugin
+#: solvebeam-diagrams-with-mermaid.php:11
+msgid "SolveBeam Diagrams with Mermaid"
+msgstr "SolveBeam Diagrams with Mermaid"
+
+#. Plugin URI of the plugin
+#: solvebeam-diagrams-with-mermaid.php:12
+msgid "https://www.solvebeam.com/wordpress/plugins/solvebeam-diagrams-with-mermaid/"
+msgstr ""
+
+#. Description of the plugin
+#: solvebeam-diagrams-with-mermaid.php:13
+msgid "A plugin for rendering Mermaid diagrams and visualizations from Mermaid code."
+msgstr "Een plugin voor het weergeven van Mermaid-diagrammen en visualisaties vanuit Mermaid-code."
+
+#. Author of the plugin
+#: solvebeam-diagrams-with-mermaid.php:17
+msgid "SolveBeam"
+msgstr "SolveBeam"
+
+#. Author URI of the plugin
+#: solvebeam-diagrams-with-mermaid.php:18
+msgid "https://www.solvebeam.com/"
+msgstr "https://www.solvebeam.com/"
+
+#: blocks-src/mermaid-diagram/index.js:49
+msgid "Unable to render this diagram."
+msgstr "Dit diagram kan niet worden weergegeven."
+
+#: blocks-src/mermaid-diagram/index.js:81
+msgid "Mermaid"
+msgstr "Mermaid"
+
+#: blocks-src/mermaid-diagram/index.js:84
+#: blocks-src/mermaid-diagram/index.js:98
+msgid "Mermaid code"
+msgstr "Mermaid-code"
+
+#: blocks-src/mermaid-diagram/index.js:124
+msgid "Mermaid diagram"
+msgstr "Mermaid-diagram"
+
+#: blocks-src/mermaid-diagram/block.json
+#: blocks/mermaid-diagram/block.json
+msgctxt "block title"
+msgid "Mermaid"
+msgstr "Mermaid"
+
+#: blocks-src/mermaid-diagram/block.json
+#: blocks/mermaid-diagram/block.json
+msgctxt "block description"
+msgid "Enter Mermaid code and render it as diagrams or visualizations."
+msgstr "Voer Mermaid-code in en geef deze weer als diagrammen of visualisaties."

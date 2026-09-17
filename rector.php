@@ -16,7 +16,7 @@ return RectorConfig::configure()
 	->withPaths(
 		[
 			__DIR__ . '/rector.php',
-			__DIR__ . '/solvebeam-mermaid.php',
+			__DIR__ . '/solvebeam-diagrams-with-mermaid.php',
 			__DIR__ . '/psr-4',
 		]
 	)

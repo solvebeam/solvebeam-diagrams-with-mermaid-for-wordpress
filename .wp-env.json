@@ -13,8 +13,8 @@
 		"https://downloads.wordpress.org/plugin/query-monitor.zip"
 	],
 	"mappings": {
-		"wp-content/plugins/solvebeam-mermaid-dev": "./",
-		"wp-content/plugins/solvebeam-mermaid": "./build/solvebeam-mermaid/",
+		"wp-content/plugins/solvebeam-diagrams-with-mermaid-dev": "./",
+		"wp-content/plugins/solvebeam-diagrams-with-mermaid": "./build/solvebeam-diagrams-with-mermaid/",
 		"wp-content/plugins/merpress": "https://downloads.wordpress.org/plugin/merpress.zip"
 	},
 	"testsEnvironment": false

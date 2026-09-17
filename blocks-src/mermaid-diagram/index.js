@@ -48,7 +48,7 @@ function MermaidPreview( { code } ) {
 						renderError.message ||
 							__(
 								'Unable to render this diagram.',
-								'solvebeam-mermaid'
+								'solvebeam-diagrams-with-mermaid'
 							)
 					);
 				}
@@ -77,9 +77,14 @@ function Edit( { attributes, setAttributes } ) {
 	return (
 		<>
 			<InspectorControls>
-				<PanelBody title={ __( 'Mermaid', 'solvebeam-mermaid' ) }>
+				<PanelBody
+					title={ __( 'Mermaid', 'solvebeam-diagrams-with-mermaid' ) }
+				>
 					<TextareaControl
-						label={ __( 'Mermaid code', 'solvebeam-mermaid' ) }
+						label={ __(
+							'Mermaid code',
+							'solvebeam-diagrams-with-mermaid'
+						) }
 						value={ code }
 						onChange={ ( value ) =>
 							setAttributes( { code: value } )
@@ -90,7 +95,10 @@ function Edit( { attributes, setAttributes } ) {
 			</InspectorControls>
 			<div { ...blockProps }>
 				<TextareaControl
-					label={ __( 'Mermaid code', 'solvebeam-mermaid' ) }
+					label={ __(
+						'Mermaid code',
+						'solvebeam-diagrams-with-mermaid'
+					) }
 					value={ code }
 					onChange={ ( value ) => setAttributes( { code: value } ) }
 					rows={ 8 }
@@ -113,7 +121,10 @@ registerBlockType( metadata.name, {
 			<div { ...blockProps }>
 				<div
 					className="solvebeam-mermaid-output"
-					aria-label={ __( 'Mermaid diagram', 'solvebeam-mermaid' ) }
+					aria-label={ __(
+						'Mermaid diagram',
+						'solvebeam-diagrams-with-mermaid'
+					) }
 				/>
 				<pre className="solvebeam-mermaid-source">
 					{ attributes.code || DEFAULT_CODE }
