@@ -31,8 +31,7 @@ frontend.
 
 `blocks-src/`, `package.json`, and `composer.json` are intentionally not excluded by
 `.distignore`, so the human-readable source and build tooling ship inside the
-distributed plugin ZIP itself, not just in this git repository. This is also documented
-for WordPress.org reviewers in `readme.txt` under "Source Code".
+distributed plugin ZIP itself, not just in this git repository.
 
 ### Local environment (wp-env)
 
