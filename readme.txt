@@ -13,6 +13,8 @@ A plugin for rendering Mermaid diagrams and visualizations from Mermaid code.
 
 == Description ==
 
+[SolveBeam](https://www.solvebeam.com/) · [GitHub](https://github.com/solvebeam/solvebeam-diagrams-with-mermaid-for-wordpress)
+
 SolveBeam Diagrams with Mermaid adds a block for creating diagrams and visualizations with
 [https://mermaid.js.org/ Mermaid]. Enter Mermaid syntax in the block editor and
 the diagram is rendered in the editor and on the front end.
