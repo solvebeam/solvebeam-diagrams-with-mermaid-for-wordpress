@@ -19,7 +19,7 @@
  * Text Domain:       solvebeam-diagrams-with-mermaid
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * GitHub URI:        https://github.com/solvebeam/solvebeam-mermaid-for-wordpress
+ * GitHub URI:        https://github.com/solvebeam/solvebeam-diagrams-with-mermaid-for-wordpress
  */
 
 declare(strict_types=1);

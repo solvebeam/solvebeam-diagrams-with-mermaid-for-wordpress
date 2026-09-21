@@ -7,13 +7,13 @@
 	"keywords": [
 		"solvebeam"
 	],
-	"homepage": "https://github.com/solvebeam/solvebeam-mermaid-for-wordpress#readme",
+	"homepage": "https://github.com/solvebeam/solvebeam-diagrams-with-mermaid-for-wordpress#readme",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/solvebeam/solvebeam-mermaid-for-wordpress.git"
+		"url": "git+https://github.com/solvebeam/solvebeam-diagrams-with-mermaid-for-wordpress.git"
 	},
 	"bugs": {
-		"url": "https://github.com/solvebeam/solvebeam-mermaid-for-wordpress/issues"
+		"url": "https://github.com/solvebeam/solvebeam-diagrams-with-mermaid-for-wordpress/issues"
 	},
 	"dependencies": {
 		"mermaid": "^12.0.0"

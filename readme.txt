@@ -51,11 +51,30 @@ No. The plugin does not require an account, API key, or subscription.
 
 == Screenshots ==
 
+== Source Code ==
+
+The JavaScript and CSS in `blocks/` are compiled/minified production assets. The
+human-readable source is included in the plugin download itself, in
+`blocks-src/`, together with the build tooling (`package.json` and
+`composer.json`) used to compile it.
+
+To rebuild the assets from source:
+
+`npm install`
+`npm run build`
+
+This runs `@wordpress/scripts` (webpack) to compile `blocks-src/` into `blocks/`.
+
+The full source, including this build tooling, is also maintained publicly at
+[https://github.com/solvebeam/solvebeam-diagrams-with-mermaid-for-wordpress].
+
 == Third-Party Licenses ==
 
 This plugin bundles [https://github.com/mermaid-js/mermaid Mermaid], which is
 available under the MIT License. The Mermaid license is available at
-[https://github.com/mermaid-js/mermaid/blob/develop/LICENSE].
+[https://github.com/mermaid-js/mermaid/blob/develop/LICENSE]. Mermaid is
+installed from npm and bundled into `blocks/` by the same webpack build
+described above; its original source is available at the link above.
 
 == Changelog ==
 

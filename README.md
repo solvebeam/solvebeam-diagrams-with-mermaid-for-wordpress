@@ -29,6 +29,11 @@ Use `npm start` while developing. The block stores Mermaid code in the
 post and renders a live preview in the block editor and as an SVG on the
 frontend.
 
+`blocks-src/`, `package.json`, and `composer.json` are intentionally not excluded by
+`.distignore`, so the human-readable source and build tooling ship inside the
+distributed plugin ZIP itself, not just in this git repository. This is also documented
+for WordPress.org reviewers in `readme.txt` under "Source Code".
+
 ### Local environment (wp-env)
 
 ```sh
