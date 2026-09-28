@@ -16,7 +16,7 @@ A plugin for rendering Mermaid diagrams and visualizations from Mermaid code.
 [SolveBeam](https://www.solvebeam.com/) · [GitHub](https://github.com/solvebeam/solvebeam-diagrams-with-mermaid-for-wordpress)
 
 SolveBeam Diagrams with Mermaid adds a block for creating diagrams and visualizations with
-[https://mermaid.js.org/ Mermaid]. Enter Mermaid syntax in the block editor and
+[Mermaid](https://mermaid.js.org/). Enter Mermaid syntax in the block editor and
 the diagram is rendered in the editor and on the front end.
 
 Mermaid is rendered locally in the browser. This plugin does not require an
@@ -38,7 +38,7 @@ rendered on the front end.
 ### Which Mermaid syntax is supported?
 
 The block uses the Mermaid syntax supported by the version bundled with the
-plugin. See the [https://mermaid.js.org/intro/ Mermaid documentation] for the
+plugin. See the [Mermaid documentation](https://mermaid.js.org/intro/) for the
 available diagram types and syntax.
 
 ### Is my Mermaid code sent to an external service?
@@ -55,28 +55,71 @@ No. The plugin does not require an account, API key, or subscription.
 
 == Source Code ==
 
-The JavaScript and CSS in `blocks/` are compiled/minified production assets. The
-human-readable source is included in the plugin download itself, in
-`blocks-src/`, together with the build tooling (`package.json` and
-`composer.json`) used to compile it.
+This plugin ships compiled (minified) JavaScript and CSS in the `blocks/`
+folder. The human-readable source code of everything in that folder is
+publicly available:
 
-To rebuild the assets from source:
+* Plugin source code (block editor and front-end scripts, styles and build
+  configuration): [https://github.com/solvebeam/solvebeam-diagrams-with-mermaid-for-wordpress](https://github.com/solvebeam/solvebeam-diagrams-with-mermaid-for-wordpress).
+  The same source is also included in this plugin in the `blocks-src/` folder,
+  together with `package.json`.
+* Mermaid: [https://github.com/mermaid-js/mermaid](https://github.com/mermaid-js/mermaid).
 
-`npm install`
-`npm run build`
+= What is in the blocks/ folder? =
 
-This runs `@wordpress/scripts` (webpack) to compile `blocks-src/` into `blocks/`.
+* `blocks/mermaid-diagram/` – compiled from `blocks-src/mermaid-diagram/`
+  (`index.js`, `view.js`, `editor.css`, `style.css` and `block.json`),
+  including the core of the Mermaid library.
+* `blocks/*.js` (numbered files such as `blocks/8726.js`) – chunks that webpack
+  splits off from Mermaid and are loaded on demand for the different diagram
+  types. These files contain only code from Mermaid and its npm dependencies,
+  not from this plugin.
 
-The full source, including this build tooling, is also maintained publicly at
-[https://github.com/solvebeam/solvebeam-diagrams-with-mermaid-for-wordpress].
+The Mermaid dependencies bundled in these chunks, with their public source code:
+
+* @mermaid-js/parser: [https://github.com/mermaid-js/mermaid/tree/develop/packages/parser](https://github.com/mermaid-js/mermaid/tree/develop/packages/parser)
+* @braintree/sanitize-url: [https://github.com/braintree/sanitize-url](https://github.com/braintree/sanitize-url)
+* @iconify/utils: [https://github.com/iconify/iconify](https://github.com/iconify/iconify)
+* @upsetjs/venn.js: [https://github.com/upsetjs/venn.js](https://github.com/upsetjs/venn.js)
+* chevrotain: [https://github.com/Chevrotain/chevrotain](https://github.com/Chevrotain/chevrotain)
+* cytoscape: [https://github.com/cytoscape/cytoscape.js](https://github.com/cytoscape/cytoscape.js)
+* cytoscape-cose-bilkent: [https://github.com/cytoscape/cytoscape.js-cose-bilkent](https://github.com/cytoscape/cytoscape.js-cose-bilkent)
+* cytoscape-fcose: [https://github.com/iVis-at-Bilkent/cytoscape.js-fcose](https://github.com/iVis-at-Bilkent/cytoscape.js-fcose)
+* d3: [https://github.com/d3/d3](https://github.com/d3/d3)
+* d3-sankey: [https://github.com/d3/d3-sankey](https://github.com/d3/d3-sankey)
+* dagre-d3-es: [https://github.com/tbo47/dagre-es](https://github.com/tbo47/dagre-es)
+* dayjs: [https://github.com/iamkun/dayjs](https://github.com/iamkun/dayjs)
+* dompurify: [https://github.com/cure53/DOMPurify](https://github.com/cure53/DOMPurify)
+* elkjs: [https://github.com/kieler/elkjs](https://github.com/kieler/elkjs)
+* es-toolkit: [https://github.com/toss/es-toolkit](https://github.com/toss/es-toolkit)
+* katex: [https://github.com/KaTeX/KaTeX](https://github.com/KaTeX/KaTeX)
+* khroma: [https://github.com/fabiospampinato/khroma](https://github.com/fabiospampinato/khroma)
+* marked: [https://github.com/markedjs/marked](https://github.com/markedjs/marked)
+* roughjs: [https://github.com/rough-stuff/rough](https://github.com/rough-stuff/rough)
+* stylis: [https://github.com/thysultan/stylis](https://github.com/thysultan/stylis)
+* ts-dedent: [https://github.com/tamino-martinius/node-ts-dedent](https://github.com/tamino-martinius/node-ts-dedent)
+* uuid: [https://github.com/uuidjs/uuid](https://github.com/uuidjs/uuid)
+
+= Building from source =
+
+The compiled files are built with [@wordpress/scripts](https://www.npmjs.com/package/@wordpress/scripts)
+(webpack). Node.js and npm are required.
+
+1. Clone the repository or use the plugin folder:
+   `git clone https://github.com/solvebeam/solvebeam-diagrams-with-mermaid-for-wordpress.git`
+2. Install the dependencies (including Mermaid from npm): `npm install`
+3. Build the production files: `npm run build`
+
+This compiles `blocks-src/` into `blocks/`. Use `npm run start` to build in
+development mode and watch for changes; development builds are not minified.
 
 == Third-Party Licenses ==
 
-This plugin bundles [https://github.com/mermaid-js/mermaid Mermaid], which is
+This plugin bundles [Mermaid](https://github.com/mermaid-js/mermaid), which is
 available under the MIT License. The Mermaid license is available at
-[https://github.com/mermaid-js/mermaid/blob/develop/LICENSE]. Mermaid is
-installed from npm and bundled into `blocks/` by the same webpack build
-described above; its original source is available at the link above.
+[https://github.com/mermaid-js/mermaid/blob/develop/LICENSE](https://github.com/mermaid-js/mermaid/blob/develop/LICENSE).
+The dependencies of Mermaid listed above are available under their own open
+source licenses, which can be found in their repositories.
 
 == Changelog ==
 
