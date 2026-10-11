@@ -9,7 +9,7 @@ jobs:
 
     environment:
       name: WordPress.org plugin directory
-      url: https://wordpress.org/plugins/solvebeam-diagrams-with-mermaid/
+      url: ${{ steps.deploy.outputs.public-url }}
 
     steps:
       - name: Checkout
@@ -21,6 +21,7 @@ jobs:
             readme.txt
 
       - name: Deploy
+        id: deploy
         uses: solvebeam/action-wordpress-org-plugin-readme-deploy@main
         with:
           username: ${{ vars.WORDPRESS_ORG_SOLVEBEAM_USERNAME }}
