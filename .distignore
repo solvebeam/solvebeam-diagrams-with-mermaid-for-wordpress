@@ -20,6 +20,8 @@ phpstan.neon.dist
 
 /rector.php
 
+/branding/
+
 /build/
 
 /node_modules/

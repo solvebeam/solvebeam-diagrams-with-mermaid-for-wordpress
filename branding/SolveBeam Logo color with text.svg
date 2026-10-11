@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="2973.1431"
+   height="900"
+   viewBox="0 0 2973.1431 900"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.3 (0d15f750, 2025-12-25)"
+   sodipodi:docname="SolveBeam Logo with text.svg"
+   inkscape:export-filename="SolveBeam Logo Rebuild.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="true"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="0.25"
+     inkscape:cx="868"
+     inkscape:cy="1054"
+     inkscape:window-width="1956"
+     inkscape:window-height="1186"
+     inkscape:window-x="2239"
+     inkscape:window-y="30"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="g6" />
+  <defs
+     id="defs1">
+    <rect
+       x="1050"
+       y="290"
+       width="288"
+       height="136"
+       id="rect1" />
+    <linearGradient
+       id="linearGradient7"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#ff0000;stop-opacity:1;"
+         offset="0"
+         id="stop7" />
+      <stop
+         style="stop-color:#fab816;stop-opacity:1;"
+         offset="1"
+         id="stop8" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient7"
+       id="linearGradient8"
+       x1="100"
+       y1="450"
+       x2="800"
+       y2="450"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient7"
+       id="linearGradient2"
+       gradientUnits="userSpaceOnUse"
+       x1="100"
+       y1="450"
+       x2="800"
+       y2="450"
+       gradientTransform="matrix(1.4142136,0,0,1.4142136,602.08378,526.15358)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient7"
+       id="linearGradient1"
+       gradientUnits="userSpaceOnUse"
+       x1="100"
+       y1="450"
+       x2="800"
+       y2="450" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient7"
+       id="linearGradient3"
+       gradientUnits="userSpaceOnUse"
+       x1="100"
+       y1="450"
+       x2="800"
+       y2="450" />
+  </defs>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="Background"
+     style="display:none;stroke-width:0.264583"
+     transform="scale(3.7795276)">
+    <rect
+       style="display:inline;fill:#1a1a1a;fill-opacity:0.1;stroke:none;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       id="rect2-3-3-9-3-3"
+       width="238.125"
+       height="26.458332"
+       x="0"
+       y="211.66666"
+       inkscape:label="Row 9" />
+    <rect
+       style="display:inline;fill:#000000;fill-opacity:0.2;stroke:none;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       id="rect2-3-5-3-0"
+       width="238.125"
+       height="26.458332"
+       x="0"
+       y="185.20833"
+       inkscape:label="Row 8" />
+    <rect
+       style="display:inline;fill:#1a1a1a;fill-opacity:0.1;stroke:none;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       id="rect2-3-3-9-3"
+       width="238.125"
+       height="26.458332"
+       x="1.5987211e-15"
+       y="158.75"
+       inkscape:label="Row 7" />
+    <rect
+       style="display:inline;fill:#000000;fill-opacity:0.2;stroke:none;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       id="rect2-3-5-3"
+       width="238.125"
+       height="26.458332"
+       x="1.5987211e-15"
+       y="132.29167"
+       inkscape:label="Row 6" />
+    <rect
+       style="display:inline;fill:#1a1a1a;fill-opacity:0.1;stroke:none;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       id="rect2-3-3-9"
+       width="238.125"
+       height="26.458332"
+       x="0"
+       y="105.83333"
+       inkscape:label="Row 5" />
+    <rect
+       style="display:inline;fill:#000000;fill-opacity:0.2;stroke:none;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       id="rect2-3-5"
+       width="238.125"
+       height="26.458332"
+       x="0"
+       y="79.375"
+       inkscape:label="Row 4" />
+    <rect
+       style="display:inline;fill:#1a1a1a;fill-opacity:0.1;stroke:none;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       id="rect2-3-3"
+       width="238.125"
+       height="26.458332"
+       x="-9.992007e-17"
+       y="52.916664"
+       inkscape:label="Row 3" />
+    <rect
+       style="display:inline;fill:#000000;fill-opacity:0.2;stroke:none;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       id="rect2-3"
+       width="238.125"
+       height="26.458332"
+       x="0"
+       y="26.458332"
+       inkscape:label="Row 2" />
+    <rect
+       style="display:inline;fill:#1a1a1a;fill-opacity:0.1;stroke:none;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       id="rect2-3-3-8"
+       width="238.125"
+       height="26.458332"
+       x="0"
+       y="0"
+       inkscape:label="Row 1" />
+  </g>
+  <g
+     id="g6"
+     transform="matrix(0.5,0.5,-0.5,0.5,450,0)"
+     style="fill:url(#linearGradient8);fill-opacity:1;stroke-width:1.41421">
+    <text
+       xml:space="preserve"
+       style="font-size:565.685px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:center;text-anchor:middle;fill:#1a1a1a;stroke-width:1.99999"
+       x="2024.7826"
+       y="845.76587"
+       id="text1"
+       transform="rotate(-45)"><tspan
+         sodipodi:role="line"
+         id="tspan1"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:565.685px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';fill:#1a1a1a;stroke-width:1.99999"
+         x="2024.7827"
+         y="845.76587">SolveBeam</tspan></text>
+    <g
+       id="g6-4"
+       style="display:inline;fill:url(#linearGradient3);fill-opacity:1;stroke-width:1.41421">
+      <path
+         id="path4-8"
+         style="baseline-shift:baseline;display:inline;overflow:visible;vector-effect:none;fill:url(#linearGradient1);fill-opacity:1;stroke-width:1.41421;enable-background:accumulate;stop-color:#000000;stop-opacity:1"
+         d="M 350,100 A 250.00001,250.00001 0 0 0 100,350 250.00001,250.00001 0 0 0 350,600 H 463.65625 A 99.999996,99.999996 0 0 0 550,650 99.999996,99.999996 0 0 0 650,550 99.999996,99.999996 0 0 0 550,450 99.999996,99.999996 0 0 0 463.65625,500 H 350 A 150,150 0 0 1 200,350 150,150 0 0 1 350,200 H 800 V 100 Z m 0,150 c -55.22848,0 -100,44.77152 -100,100 0,55.22848 44.77152,100 100,100 35.72621,-3.5e-4 68.73846,-19.06019 86.60156,-50 H 550 c 82.84271,0 150,67.15729 150,150 0,82.84271 -67.15729,150 -150,150 H 100 V 800 H 550 C 688.07118,799.99999 799.99999,688.07118 800,550 799.99999,411.92882 688.07118,300.00001 550,300 H 436.60156 C 418.73846,269.06019 385.72621,250.00035 350,250 Z m 350,-50 v 90.28516 c 40.14085,23.16412 74.36913,55.31329 100,93.92578 V 200 Z M 100,515.36719 V 700 H 200 V 609.0332 C 159.88765,585.94312 125.66175,553.88507 100,515.36719 Z" />
+    </g>
+  </g>
+</svg>
