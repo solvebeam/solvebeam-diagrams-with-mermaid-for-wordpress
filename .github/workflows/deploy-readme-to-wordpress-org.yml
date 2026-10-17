@@ -2,6 +2,12 @@ name: Deploy readme.txt to WordPress.org
 
 on:
   workflow_dispatch:
+    inputs:
+      dry-run:
+        description: 'Run without committing in the WordPress.org Subversion repository'
+        required: false
+        type: boolean
+        default: false
 
 jobs:
   deploy:
@@ -27,3 +33,4 @@ jobs:
           username: ${{ vars.WORDPRESS_ORG_SOLVEBEAM_USERNAME }}
           password: ${{ secrets.WORDPRESS_ORG_SOLVEBEAM_PASSWORD }}
           slug: solvebeam-diagrams-with-mermaid
+          dry-run: ${{ inputs.dry-run }}

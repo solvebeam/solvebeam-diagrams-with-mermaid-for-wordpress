@@ -7,6 +7,11 @@ on:
         description: 'Tag to deploy to WordPress.org'
         required: true
         type: string
+      dry-run:
+        description: 'Run without committing or tagging in the WordPress.org Subversion repository'
+        required: false
+        type: boolean
+        default: false
   release:
     types: [released]
 
@@ -28,3 +33,4 @@ jobs:
           password: ${{ secrets.WORDPRESS_ORG_SOLVEBEAM_PASSWORD }}
           tag: ${{ inputs.tag || github.event.release.tag_name }}
           slug: solvebeam-diagrams-with-mermaid
+          dry-run: ${{ inputs.dry-run || false }}
