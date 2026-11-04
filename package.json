@@ -28,7 +28,8 @@
 		"@wordpress/env": "^11.15.0",
 		"@wordpress/i18n": "^6.28.0",
 		"@wordpress/scripts": "^35.0.0",
-		"npm-run-all": "^4.1.5"
+		"npm-run-all": "^4.1.5",
+		"sharp": "^0.35.5"
 	},
 	"prettier": "@wordpress/prettier-config",
 	"scripts": {
@@ -38,7 +39,8 @@
 		"build-wp-scripts": "wp-scripts build --webpack-src-dir=blocks-src --output-path=blocks",
 		"start": "wp-scripts start --webpack-src-dir=blocks-src --output-path=blocks",
 		"screenshots": "wp-scripts test-playwright --config scripts/screenshots/playwright.config.js && npm run screenshots:frame",
-		"screenshots:frame": "node scripts/screenshots/frame.js",
-		"screenshots:assets": "node scripts/screenshots/assets.js"
+		"screenshots:frame": "node scripts/screenshots/frame.js && npm run screenshots:optimize -- screenshot",
+		"screenshots:assets": "node scripts/screenshots/assets.js && npm run screenshots:optimize -- banner",
+		"screenshots:optimize": "node scripts/screenshots/optimize.js"
 	}
 }

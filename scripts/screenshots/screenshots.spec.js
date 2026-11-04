@@ -286,8 +286,8 @@ test.describe( 'Screenshots', () => {
 				.screenshot( { path: screenshotPath( 5 ) } );
 		} );
 
-		test.describe( 'Narrow', () => {
-			test.use( { viewport: { width: 800, height: 600 } } );
+		test.describe( 'Wide', () => {
+			test.use( { viewport: { width: 1280, height: 800 } } );
 
 			test( '6. Sequence diagram, pie chart, Gantt chart and mindmap', async ( {
 				page,
@@ -299,6 +299,11 @@ test.describe( 'Screenshots', () => {
 					page.locator( '.solvebeam-mermaid-output > svg' ),
 					4
 				);
+
+				// Margin around the post content, without the page title.
+				await page.addStyleTag( {
+					content: '.wp-block-post-content { padding-block: 32px; }',
+				} );
 
 				await page
 					.locator( '.wp-block-post-content' )
