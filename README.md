@@ -1,6 +1,25 @@
 # SolveBeam Diagrams with Mermaid
 
+[![Latest release](https://img.shields.io/github/v/release/solvebeam/solvebeam-diagrams-with-mermaid-for-wordpress?label=Release)](https://github.com/solvebeam/solvebeam-diagrams-with-mermaid-for-wordpress/releases/latest)
+[![WordPress.org](https://img.shields.io/wordpress/plugin/v/solvebeam-diagrams-with-mermaid?label=WordPress.org&logo=wordpress)](https://wordpress.org/plugins/solvebeam-diagrams-with-mermaid/)
+[![PHP 8.3+](https://img.shields.io/badge/PHP-8.3%2B-777BB4?logo=php&logoColor=white)](https://www.php.net/)
+[![WordPress 6.8+](https://img.shields.io/badge/WordPress-6.8%2B-21759B?logo=wordpress&logoColor=white)](https://wordpress.org/)
+[![License: GPL v2+](https://img.shields.io/badge/License-GPL%20v2%2B-blue.svg)](https://www.gnu.org/licenses/gpl-2.0.html)
+[![Built with Mermaid](https://img.shields.io/badge/Built%20with-Mermaid-FF3670?logo=mermaid&logoColor=white)](https://mermaid.js.org/)
+[![Live Preview](https://img.shields.io/badge/WordPress_Playground-Live_Preview-3858e9?logo=wordpress)](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/solvebeam/solvebeam-diagrams-with-mermaid-for-wordpress/main/.wordpress-org/blueprints/blueprint.json)
+
 A plugin for rendering Mermaid diagrams and visualizations from Mermaid code.
+
+Try the plugin in [WordPress Playground](https://playground.wordpress.net/) with the Live Preview link above. The preview opens the block editor with a Mermaid diagram.
+
+![SolveBeam Diagrams with Mermaid](.wordpress-org/banner-1544x500.png)
+
+## Screenshots
+
+| | |
+|---|---|
+| ![The Mermaid block with the live preview in the block editor](.wordpress-org/screenshot-1.png) | ![The Mermaid code in the block settings sidebar](.wordpress-org/screenshot-3.png) |
+| ![A Mermaid diagram on the front end of a website](.wordpress-org/screenshot-5.png) | ![A clear error message for invalid Mermaid code](.wordpress-org/screenshot-4.png) |
 
 ## Requirements
 
@@ -48,6 +67,22 @@ The `.wp-env.json` maps the plugin twice into the WordPress environment:
 | `wp-content/plugins/solvebeam-diagrams-with-mermaid` | `./build/solvebeam-diagrams-with-mermaid/` | WordPress.org distribution build |
 
 This lets you test both the raw source and the production build side-by-side.
+
+### Screenshots and banner
+
+The wordpress.org screenshots and banner in `.wordpress-org/` are generated with [Playwright](https://playwright.dev/). The plugin icon is designed by hand.
+
+```sh
+npm run build
+npx playwright install chromium
+npx wp-env start
+npm run screenshots
+npm run screenshots:assets
+```
+
+`npm run screenshots` creates the editor and frontend screenshots in `build/screenshots/` and frames them on a red to yellow gradient in `.wordpress-org/`. The numbers match the `== Screenshots ==` section in `readme.txt`. `npm run screenshots:assets` renders the banner and does not need WordPress. The scripts and test content are in `scripts/screenshots/`.
+
+If `wp-env` runs on another port, set `WP_BASE_URL`, for example `WP_BASE_URL=http://localhost:8890 npm run screenshots`.
 
 ### Build
 

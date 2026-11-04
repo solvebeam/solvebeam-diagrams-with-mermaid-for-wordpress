@@ -53,6 +53,13 @@ No. The plugin does not require an account, API key, or subscription.
 
 == Screenshots ==
 
+1. The Mermaid block with the live preview in the block editor.
+2. The Mermaid block in the block inserter.
+3. The Mermaid code in the block settings sidebar.
+4. A clear error message for invalid Mermaid code.
+5. A Mermaid diagram on the front end of a website.
+6. A sequence diagram, pie chart, Gantt chart and mindmap on the front end.
+
 == Source Code ==
 
 This plugin ships compiled (minified) JavaScript and CSS in the `blocks/`

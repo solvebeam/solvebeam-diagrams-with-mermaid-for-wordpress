@@ -1,0 +1,33 @@
+{
+	"$schema": "https://playground.wordpress.net/blueprint-schema.json",
+	"meta": {
+		"title": "SolveBeam Diagrams with Mermaid",
+		"description": "Create diagrams and visualizations with Mermaid in the block editor.",
+		"author": "solvebeam",
+		"categories": [
+			"Content"
+		]
+	},
+	"landingPage": "/wp-admin/post.php?post=2&action=edit",
+	"preferredVersions": {
+		"php": "8.3",
+		"wp": "latest"
+	},
+	"login": true,
+	"steps": [
+		{
+			"step": "installPlugin",
+			"pluginData": {
+				"resource": "wordpress.org/plugins",
+				"slug": "solvebeam-diagrams-with-mermaid"
+			},
+			"options": {
+				"activate": true
+			}
+		},
+		{
+			"step": "runPHP",
+			"code": "<?php require '/wordpress/wp-load.php'; wp_update_post( [ 'ID' => 2, 'post_title' => 'Editorial workflow', 'post_content' => wp_slash( '<!-- wp:paragraph -->\n<p>Every post on this website follows the same editorial workflow:</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:solvebeam-diagrams-with-mermaid/mermaid-diagram {\"code\":\"flowchart LR\\n    A[Write post] \\u002d\\u002d\\u003e B{Review}\\n    B \\u002d\\u002d\\u003e|Approved| C[Publish]\\n    B \\u002d\\u002d\\u003e|Changes needed| A\\n    C \\u002d\\u002d\\u003e D[Share]\"} -->\n<div class=\"wp-block-solvebeam-diagrams-with-mermaid-mermaid-diagram solvebeam-mermaid\"><div class=\"solvebeam-mermaid-output\" aria-label=\"Mermaid diagram\"></div><pre class=\"solvebeam-mermaid-source\">flowchart LR\n    A[Write post] --> B{Review}\n    B -->|Approved| C[Publish]\n    B -->|Changes needed| A\n    C --> D[Share]</pre></div>\n<!-- /wp:solvebeam-diagrams-with-mermaid/mermaid-diagram -->' ) ] );"
+		}
+	]
+}

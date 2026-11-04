@@ -25,3 +25,9 @@ phpstan.neon.dist
 /build/
 
 /node_modules/
+
+/artifacts/
+
+/scripts/
+
+/.wordpress-org/

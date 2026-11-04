@@ -19,9 +19,11 @@
 		"mermaid": "^12.0.0"
 	},
 	"devDependencies": {
+		"@playwright/test": "^1.64.1",
 		"@wordpress/block-editor": "^17.1.0",
 		"@wordpress/blocks": "^16.0.0",
 		"@wordpress/components": "^40.1.0",
+		"@wordpress/e2e-test-utils-playwright": "^3.2.0",
 		"@wordpress/element": "^8.7.0",
 		"@wordpress/env": "^11.15.0",
 		"@wordpress/i18n": "^6.28.0",
@@ -34,6 +36,9 @@
 		"lint:pkg-json": "wp-scripts lint-pkg-json",
 		"build": "npm-run-all build-wp-scripts",
 		"build-wp-scripts": "wp-scripts build --webpack-src-dir=blocks-src --output-path=blocks",
-		"start": "wp-scripts start --webpack-src-dir=blocks-src --output-path=blocks"
+		"start": "wp-scripts start --webpack-src-dir=blocks-src --output-path=blocks",
+		"screenshots": "wp-scripts test-playwright --config scripts/screenshots/playwright.config.js && npm run screenshots:frame",
+		"screenshots:frame": "node scripts/screenshots/frame.js",
+		"screenshots:assets": "node scripts/screenshots/assets.js"
 	}
 }

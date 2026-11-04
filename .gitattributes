@@ -8,3 +8,5 @@
 /branding/        export-ignore
 /phpcs.xml.dist   export-ignore
 /rector.php       export-ignore
+/scripts/         export-ignore
+/.wordpress-org/  export-ignore
